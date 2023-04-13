@@ -1,0 +1,40 @@
+% This template requites the WMU digital logo to be present in your working folder.  
+% Download the official logos at 
+% https://wmich.edu/brand/visualidentity/logo
+% The one I typically use is the Long Horizonal one (hence the name of the .png)
+% https://wmich.edu/sites/default/files/attachments/u171/2020/WMU%20web-digital.png
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{tcolorbox}
+
+% Official WMU Colors according to 
+% https://wmich.edu/brand/visualidentity/color
+\usetheme{Madrid}
+\definecolor{WMUGold}{RGB}{241,197,0} %primary
+\definecolor{WMUBrown}{RGB}{83,46,31} %secondary
+\definecolor{WMUWhite}{RGB}{255,255,255}
+\setbeamercolor{palette primary}{bg=WMUGold,fg=WMUBrown}
+\setbeamercolor{palette secondary}{bg=WMUGold,fg=WMUBrown}
+\setbeamercolor{palette tertiary}{bg=WMUGold,fg=WMUBrown}
+\setbeamercolor{palette quaternary}{bg=WMUGold,fg=WMUBrown}
+\setbeamercolor{structure}{fg=WMUGold} % itemize, enumerate, etc
+\setbeamercolor{section in toc}{fg=WMUGold} % TOC sections
+
+% Override palette coloring with secondary
+\setbeamercolor{subsection in head/foot}{bg=WMUGold,fg=white}
+
+
+% Title, etc
+\title{WMU beamer template}
+\subtitle{subtitle}
+\author{Matthew Sutter}
+\date{}
+\logo{\includegraphics[scale=0.5]{WMU web-digital.png}}
+
+
+% Start content
+\begin{document}
+\begin{frame}
+    \titlepage
+\end{frame}
+\end{document}
